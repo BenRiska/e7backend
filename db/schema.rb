@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 2020_04_18_172419) do
   create_table "items", force: :cascade do |t|
     t.string "name"
     t.string "description"
+    t.string "bracket"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
   end
@@ -78,6 +79,7 @@ ActiveRecord::Schema.define(version: 2020_04_18_172419) do
     t.string "role"
     t.string "element"
     t.string "sprite"
+    t.integer "stars"
     t.string "headshot"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
