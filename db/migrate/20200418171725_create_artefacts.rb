@@ -5,6 +5,7 @@ class CreateArtefacts < ActiveRecord::Migration[6.0]
       t.string :name
       t.string :description
       t.string :art
+      t.integer :star
 
       t.timestamps
     end
